@@ -2,6 +2,10 @@
 
 Some scripts to download and play youtube videos
 
+NOTE: If you only want to play youtube videos without using browser and doesn't
+care about downloading the vidoes, consider using the [vlc addon for youtube-dl
+integration](https://github.com/mjasny/vlc-youtubeDL)
+
 ## Usage
 
 ```
@@ -44,4 +48,27 @@ Examples:
 run
 ```
 pip3 install -r requirements.txt
+```
+
+## VLC addon for yt-dlp
+
+The addon provided above can be used to play youtube video in VLC with some
+patching. Note that youtube-dl is broken on my Mac so I am replacing youtube-dl
+with yt-dlp.
+
+Install the addon with
+```sh
+curl https://raw.githubusercontent.com/mjasny/vlc-youtubeDL/master/youtube-dl.lua | sed 's/youtube-dl/yt-dlp/g' > youtube.luac
+# assuming MacOS
+cp youtube.luac /Applications/VLC.app/Contents/MacOS/share/lua/playlist/youtube.luac
+```
+
+and play youtube video with
+```sh
+vlc <url>
+```
+
+or on Mac
+```sh
+exec '/Applications/VLC.app/Contents/MacOS/VLC' <url>
 ```
