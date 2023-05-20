@@ -58,7 +58,7 @@ with yt-dlp.
 
 Install the addon with
 ```sh
-curl https://raw.githubusercontent.com/mjasny/vlc-youtubeDL/master/youtube-dl.lua | sed 's/youtube-dl/yt-dlp/g' > youtube.luac
+curl 'https://raw.githubusercontent.com/mjasny/vlc-youtubeDL/master/youtube-dl.lua' | sed 's/youtube-dl/yt-dlp/g' > youtube.luac
 # assuming MacOS
 cp youtube.luac /Applications/VLC.app/Contents/MacOS/share/lua/playlist/youtube.luac
 ```
