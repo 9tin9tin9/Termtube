@@ -18,7 +18,7 @@ Arguments:
 Options:
    -d, --dir DIRECTORY
        Target directory to files at.
-       Defaults to `` if it exists. else `/tmp`
+       Defaults to `$HOME/Music/Termtube` if it exists. else `/tmp`
 
    --yt_dlp_args ARGS
        Arguments to be passed to yt-dlp

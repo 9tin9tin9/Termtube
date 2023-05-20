@@ -1,7 +1,8 @@
 #!/usr/local/bin/bash
 
 # TODO: Change this variable to set default download directory
-DL_DIR="/Volumes/Disk/Termtube"
+# Make sure the directory exists
+DL_DIR="$HOME/Music/Termtube"
 
 HELP=(
 "usage: $0 [OPTIONS] [URL...]"
